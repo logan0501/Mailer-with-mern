@@ -1,0 +1,26 @@
+{
+  "name": "hackathon_backend",
+  "version": "1.0.0",
+  "description": "API for the mailer application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "Naveenkumar M",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.15",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.6.2",
+    "nodemon": "^2.0.7"
+  }
+}

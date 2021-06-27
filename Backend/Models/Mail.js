@@ -1,0 +1,40 @@
+const mongoose=require('mongoose')
+const mailschema=new mongoose.Schema({
+    to:{
+        type:Array
+    },
+    sender:{
+        type:String
+    },
+    from:{
+        type:String
+    },
+    body:{
+        type:String
+    },
+    html:{
+        type:String
+    },
+    subject:{
+        type:String
+    },
+    cc:{
+        type:String
+    },
+    instant:{
+        type:Boolean
+    },
+    recursive:{
+        type:Object
+    },
+    weekschedule:{
+        type:Object
+    },
+    monthschedule:{
+        type:Object
+    },
+    yearschedule:{
+        type:Object
+    }
+})
+mongoose.model("mail",mailschema)
